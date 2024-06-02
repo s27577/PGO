@@ -1,14 +1,14 @@
+import java.util.Arrays;
+
 public class Main {
+
     public static void main(String[] args) {
+        Student student1 = new Student("Jacek", "Kowalski", "s27577", "jkowalski@gmail.com", "Warszawa", Arrays.asList(2.5, 3.5, 4.5, 5.0));
+        StudentGroup A = new StudentGroup("A");
 
-        Student st = new Student();
-        st.fname = "Mateusz";
-        st.lname = "S.";
-        st.indexNumber = 27577;
-        st.email = "xyz@gmail.com";
-        st.address = "xyz";
-        st.grades = new double[]
+        double average1 = student1.calculateGradesAverage();
+        System.out.println(average1);
 
-                
+        A.addStudent(student1);
+        }
     }
-}
